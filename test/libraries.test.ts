@@ -1,14 +1,11 @@
-import DummyClass from "../src/libraries"
+import {tell} from "../src/libraries";
+import moment from 'moment';
 
 /**
  * Dummy test
  */
 describe("Dummy test", () => {
-  it("works if true is truthy", () => {
-    expect(true).toBeTruthy()
-  })
-
-  it("DummyClass is instantiable", () => {
-    expect(new DummyClass()).toBeInstanceOf(DummyClass)
+  it('should tell the time', function() {
+    expect(tell()).toEqual(moment().format('YYYY-MM-Do hh:mm:ss a'));
   })
 })
