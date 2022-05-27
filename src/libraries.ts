@@ -1,10 +1,7 @@
 // Import here Polyfills if needed. Recommended core-js (npm i -D core-js)
-  // import "core-js/fn/array.find"
-  // ...
+// import "core-js/fn/array.find"
+// ...
 
-import moment from 'moment';
+export { Stack, Queue, BinarySearchTree } from '../../Libraries/src/algorithms/data-structures'
 
-
-export function tell() {
-  return moment().format('YYYY-MM-Do hh:mm:ss a');
-}
+export { treeSort, mergeSort, quickSort } from '../../Libraries/src/algorithms/sorting'
