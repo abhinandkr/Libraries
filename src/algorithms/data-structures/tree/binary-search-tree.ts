@@ -3,6 +3,9 @@ import { Queue } from '../queue'
 
 export type Node<T> = TreeNode<T> | null
 
+/**
+ * Binary search tree stored as linked list
+ */
 export default class BinarySearchTree<T = number> {
   private _root: Node<T> = null
   get root(): Node<T> {
