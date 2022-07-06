@@ -2,5 +2,5 @@
 // import "core-js/fn/array.find"
 // ...
 
-export { Stack, Queue, BinarySearchTree } from './algorithms/data-structures'
-export { treeSort, mergeSort, quickSort } from './algorithms/sorting'
+export {Stack, Queue, BinarySearchTree} from './algorithms/data-structures';
+export {treeSort, mergeSort, quickSort} from './algorithms/sorting';

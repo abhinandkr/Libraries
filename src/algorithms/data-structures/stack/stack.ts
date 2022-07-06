@@ -1,22 +1,22 @@
 export default class Stack<T = number> {
-  private readonly items: T[]
+	private readonly items: T[];
 
-  constructor(iterable: Iterable<T> = []) {
-    // @ts-ignore
-    this.items = [...iterable]
-  }
+	constructor(iterable: Iterable<T> = []) {
+		// @ts-ignore
+		this.items = [...iterable];
+	}
 
-  public pop = () => this.items.pop()
+	get length() {
+		return this.items.length;
+	}
 
-  public push = (...items: T[]) => this.items.push(...items)
+	public pop = () => this.items.pop();
 
-  public peek = () => (this.length === 0 ? null : this.items[this.length - 1])
+	public push = (...items: T[]) => this.items.push(...items);
 
-  get length() {
-    return this.items.length
-  }
+	public peek = () => (this.length === 0 ? null : this.items[this.length - 1]);
 
-  *[Symbol.iterator]() {
-    for (const item of this.items) yield item
-  }
+	* [Symbol.iterator]() {
+		for (const item of this.items) yield item;
+	}
 }
