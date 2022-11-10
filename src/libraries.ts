@@ -4,3 +4,4 @@
 
 export {Stack, Queue, BinarySearchTree} from './algorithms/data-structures';
 export {treeSort, mergeSort, quickSort} from './algorithms/sorting';
+export {default as binarySearch} from './algorithms/searching/binary-search';
