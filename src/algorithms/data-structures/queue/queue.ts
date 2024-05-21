@@ -31,4 +31,8 @@ export default class Queue<T> {
 	public* [Symbol.iterator]() {
 		for (const item of this.items) yield item;
 	}
+
+	public dequeue_back(): T | undefined {
+		return this.items.pop();
+	}
 }
