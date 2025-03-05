@@ -1,4 +1,4 @@
-import binarySearch from '../../../src/algorithms/searching/binary-search';
+import binarySearch from '../../../src/algorithms/binary-tree-searching/binary-search';
 
 describe('test binary search', function () {
 	it('should find elements', function () {
