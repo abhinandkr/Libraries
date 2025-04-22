@@ -1,41 +1,6 @@
 import {Heap} from '../heap';
 
 export default class MinHeap extends Heap {
-	// private readonly items: number[] = [];
-	// private size: number = 0;
-	//
-	// private getLeftChildIndex =
-	// 	(parentIndex: number) => 2 * parentIndex + 1;
-	//
-	// private getRightChildIndex =
-	// 	(parentIndex: number) => 2 * parentIndex + 2;
-	//
-	// private getParentIndex =
-	// 	(childIndex: number) => Math.floor((childIndex - 1) / 2);
-	//
-	// private hasLeftChild =
-	// 	(parentIndex: number) => this.getLeftChildIndex(parentIndex) < this.size;
-	//
-	// private hasRightChild =
-	// 	(parentIndex: number) => this.getRightChildIndex(parentIndex) < this.size;
-	//
-	// private hasParent =
-	// 	(childIndex: number) => this.getParentIndex(childIndex) >= 0;
-	//
-	// private leftChild =
-	// 	(parentIndex: number) => this.items[this.getLeftChildIndex(parentIndex)];
-	//
-	// private rightChild =
-	// 	(parentIndex: number) => this.items[this.getRightChildIndex(parentIndex)];
-	//
-	// private parent =
-	// 	(childIndex: number) => this.items[this.getParentIndex(childIndex)];
-	//
-	// private swap(i: number, j: number) {
-	// 	const s = this.items[i];
-	// 	this.items[i] = this.items[j];
-	// 	this.items[j] = s;
-	// }
 
 	private heapifyDown() {
 		let index = 0;

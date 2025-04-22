@@ -40,7 +40,8 @@ export class Heap {
 			throw new Error('No elements in heap');
 		}
 		const minElement = this.items[0];
-		this.items[0] = this.items[this.size - 1];
+		// @ts-ignore
+		this.items[0] = this.items.pop();
 		this.size--;
 		return minElement;
 	}
